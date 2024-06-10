@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Loan Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Home Loan Finder</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="calculator.html">Loan Calculator</a></li>
+                <li><a href="eligibility.html">Eligibility Checker</a></li>
+                <li><a href="comparison.html">Loan Comparison</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Main content goes here -->
+        <h2>Welcome to Home Loan Finder</h2>
+        <p>Find the best home loan options tailored to your needs.</p>
+        <form action="calculate.php" method="post">
+            <label for="income">Monthly Income:</label>
+            <input type="number" id="income" name="income" required>
+
+            <label for="credit-score">Credit Score:</label>
+            <input type="number" id="credit-score" name="credit-score" required>
+
+            <label for="loan-amount">Desired Loan Amount:</label>
+            <input type="number" id="loan-amount" name="loan-amount" required>
+
+            <label for="loan-tenure">Loan Tenure (in years):</label>
+            <input type="number" id="loan-tenure" name="loan-tenure" required>
+
+            <label for="bank">Select Banks:</label>
+            <select id="bank" name="bank">
+                <option value="bank1">HDFC</option>
+                <option value="bank2">ICICI</option>
+                <option value="bank3">Axis</option>
+        <!-- Add more options for other banks -->
+            </select>
+
+            <button type="submit">Calculate</button>
+        </form>
+    </main>
+    <!-- <footer>
+        <p>&copy; 2024 Home Loan Finder</p>
+    </footer> -->
+</body>
+</html>
